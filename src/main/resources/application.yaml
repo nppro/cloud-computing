@@ -1,0 +1,16 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+
+spring:
+  datasource:
+    url: ${DB_CONNECTION_URL:jdbc:mysql://localhost:3307/campus_db}
+    driverClassName: "com.mysql.cj.jdbc.Driver"
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

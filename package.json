@@ -1,0 +1,30 @@
+{
+  "name": "campus_core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./src/main/resources/style/app.css -o ./src/main/resources/static/main.css --minify",
+    "watch": "npx @tailwindcss/cli --watch -i ./src/main/resources/style/app.css -o ./src/main/resources/static/main.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nppro/cloud-computing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nppro/cloud-computing/issues"
+  },
+  "homepage": "https://github.com/nppro/cloud-computing#readme",
+  "description": "",
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.18",
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18"
+  }
+}
